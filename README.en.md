@@ -1,36 +1,30 @@
-# 万年历
+# Calender
 
 #### Description
-多功能历法表
+mutiple-function Calender
 
 #### Software Architecture
-Software architecture description
-
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+2 header files: "headers_and_prototypes.h" and "class_definition.h"
+4 source code files: class_methods.cpp , main.cpp , main_functions.cpp , non_class_functions.cpp
 
 #### Instructions
+guidence:
+Functions: 1. print the monthly calender of a month in a year.
+           2. input 2 times and minus the later from the former.
+           3. input 2 times and add them.
+           4. calculate the exact weekday of a specific day.
+           5. input a year, judge whether it's a leap year or not.
+           6. input a time that is out of range, trim it.
+Input a time which is out of range, the program will transform it into the right form automatically.
+If precision is in your demand, choose 6 rather than 2 or 3.
+To perform a specific function, input the number before it. Input other numbers or non-blank characters to quit.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
-
-
-#### Gitee Feature
-
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+more details:
+The program works as follows: first convert the input time into a correct form, and figure out the weekday by calculating the day to 2020. 1. 1 Wed.
+As for function 2, it first calculates the seconds to 2020-1-1 00:00:00 of the 2 times, separately, then minus the later from the former, then convert the result;
+As for function 3, it first calculates the seconds to 2020-1-1 00:00:00 of the 2 times separately, add them together, and add 2 times the seconds from 0-1-1 00:00:00 to 2020-1-1 00:00:00, then convert the result;
+As for leap years, they equal n times 400, or n times 4 but with a non-zero modulus with 100. 
+The program uses long long int to store seconds, minutes, hours and days, int for months and years.
+For a greater range, use long long double as substitution.
+You can download the source code at: https://github.com/NULL-Response/Calender. 
+Besides, encoding in GBK or WINDOWS-936 to support Chinese and English at the same time.
