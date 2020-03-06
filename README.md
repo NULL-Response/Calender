@@ -1,5 +1,8 @@
 万年历
 
+2个头文件: "headers_and_prototypes.h" and "class_definition.h" 
+4个源码文件: class_methods.cpp , main.cpp , main_functions.cpp , non_class_functions.cpp
+
 ### 介绍
 
 多功能历法表，支持中英文。
